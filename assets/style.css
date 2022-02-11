@@ -1,0 +1,78 @@
+/* universal style for html padding issues */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+/* root variable colors */
+
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --tertiary-color: ;
+  }
+
+/* body styles */
+
+header {
+   /* background-attachment: fixed;
+    background-position: 80%;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+   */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    z-index: 9999;
+    /* 
+    try and add for mouse scrolling
+    transition: transform 0.25s linear 0s;
+    transform: translate(0%, 100%);
+    */
+}
+
+/* header h1/a/nav/li styles */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+}
+  
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav {
+  margin: 7px 0px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
