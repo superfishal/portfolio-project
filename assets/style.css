@@ -95,7 +95,13 @@ footer h2 {
     background-position: center;
 }
 
-/* contact styles */
+/* contact styles FROM RUN BUDDY */
+.contact-info p, .contact-info address {
+    margin: 20px 0px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+  }
 .continer-right a {
     text-decoration: none;
     display: flex;
