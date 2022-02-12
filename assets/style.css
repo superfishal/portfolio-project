@@ -6,39 +6,32 @@
   }
 
 /* root variable colors */
-
 :root {
-    --primary-color: ;
-    --secondary-color: ;
-    --tertiary-color: ;
+    --primary-color: rgb(217, 220, 214);
+    --secondary-color: rgb(225, 142, 244);
+    --tertiary-color: rgb(30, 2, 38);
   }
 
 /* body styles */
 
+/* header h1/a/nav/li styles */
+
 header {
-   /* background-attachment: fixed;
-    background-position: 80%;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-   */
-    position: -webkit-sticky;
     position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 35px;
+    padding: 5px 150px;
     background-color: var(--tertiary-color);
     z-index: 9999;
     /* 
     try and add for mouse scrolling
+        position: -webkit-sticky;
     transition: transform 0.25s linear 0s;
     transform: translate(0%, 100%);
     */
 }
 
-/* header h1/a/nav/li styles */
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -70,9 +63,58 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: var(--primary-color);
   color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow: none;
+  text-shadow: 5px, 5px, whitesmoke;
+}
+/* body styles */
+body {
+    background-color: #d9dcd6;
 }
 
+
+/* footer styles */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+footer h2 {
+    font-size: 20px;
+}
+
+
+/* banner img styles */
+.banner-img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/PScover.jpeg");
+     /* insert banner img above */
+    background-size: cover;
+    background-position: center;
+}
+
+/* contact styles */
+.continer-right a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+}
+/* Need class for img in "about me section"
+/* Need class for large-img and small-img in "projects" section
+    img {
+        width: 100%
+        height: auto
+    }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {}
+
+    /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {}
