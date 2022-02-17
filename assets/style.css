@@ -32,7 +32,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 4vw;
     color: var(--primary-color);
     margin: 0;
 }
@@ -74,16 +74,16 @@ body {
 }
 /* section styles */
 section {
-  padding: 60px;
-  
+  padding: 20px;
+  padding-bottom: 30px;
 }
 
 section h2 {
   font-style: italic;
-  font-size: 48px;
   color: var(--tertiary-color);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 1px 1px 2px var(--primary-color);
+  font-size: 5.3vw;
 }
 /* footer styles */
 footer {
@@ -131,21 +131,24 @@ footer h2 {
 }
 
 .container-right {
-  flex:calc((100% / 4) * 3);
+  /* flex:calc((100% / 4) * 3);
   padding-left: 20px;
-  text-align: center;
+  text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .container-right p {
   /* ABOUT ME STYLES */
   color: var(--tertiary-color);
-  font-size: 16pt;
+  font-size: 2vw;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
   /* CONTACT STYLES */
 .container-right a {
   color: var(--tertiary-color) ;
-  font-size: 16pt;
+  font-size: 2vw;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-decoration: none;
   align-items: baseline;
@@ -157,7 +160,10 @@ footer h2 {
   }
 .img-small {
   width: calc(100% / 2);
-  height: 100px;
+  height: 200px;
+  align-items: center;
+  display: flex;
+  flex-basis: calc(50% - 1em);
 }
 
   /* FLEX styles */
@@ -172,7 +178,11 @@ footer h2 {
 @media screen and (max-width: 980px) {}
 
     /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .container-main {
+    flex-direction: column;
+  }
+}
 /* most likely put everything in columns */
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
