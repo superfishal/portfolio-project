@@ -17,30 +17,27 @@
 /* header h1/a/nav/li styles */
 
 header {
-    position: sticky;
+    position: -webkit-sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px 150px;
+    padding: 10px 20px;
     background-color: var(--tertiary-color);
     z-index: 9999;
-    position: -webkit-sticky;
     border-bottom: 2px solid rgb(245, 245, 245, 50%);
 
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 4vw;
+    font-style: italic;
+    font-size: 3.5rem;
     color: var(--primary-color);
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 5px var(--primary-color);
+    font-size: 4.3vw;
 }
-header h1 a:hover {
-  color: var(--secondary-color);
-  text-shadow: 5px, 5px, whitesmoke;
-}
-  
+
+/*   
 header a {
     text-decoration: none;
     color: var(--primary-color);
@@ -57,17 +54,24 @@ header nav ul {
   align-items: center;
   list-style: none;
 }
-
-header nav ul li a {
+*/
+/* header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
-}
+  font-size: 1.55rem;
+} */
 
-header nav ul li a:hover {
+
+/* nav bar hover */
+
+header h1 a:hover {
   color: var(--secondary-color);
   text-shadow: 5px, 5px, whitesmoke;
+  text-decoration: none;
 }
+
+
+
 /* body styles */
 body {
     background-color: mistyrose;
@@ -82,7 +86,7 @@ section h2 {
   font-style: italic;
   color: var(--tertiary-color);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 1px 1px 2px var(--primary-color);
+  text-shadow: 2px 2px 5px var(--primary-color);
   font-size: 5.3vw;
 }
 /* footer styles */
@@ -110,8 +114,8 @@ footer h2 {
 
 /* about me IMG style */
 .aboutme-img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   float: left;
   shape-outside: ellipse();
@@ -119,11 +123,11 @@ footer h2 {
   background-clip: content-box;
 }
 /* main container styles */
-.container-main {
+/* .container-main {
   display: flex;
-}
+} */
 /* container-left and container-right styles */
-.container-left {
+/* .container-left {
   text-align: center;
   border-right: 4px solid var(--tertiary-color);
   margin-right: 20px;
@@ -134,26 +138,26 @@ footer h2 {
   /* flex:calc((100% / 4) * 3);
   padding-left: 20px;
   text-align: center; */
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-}
+} */
 
-.container-right p {
+/* .container-right p {
   /* ABOUT ME STYLES */
-  color: var(--tertiary-color);
+  /* color: var(--tertiary-color);
   font-size: 2vw;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+} */
   /* CONTACT STYLES */
-.container-right a {
+/* .container-right a {
   color: var(--tertiary-color) ;
   font-size: 2vw;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-decoration: none;
   align-items: baseline;
-}
-/* IMG CLASSES */ 
+} */ 
+/* IMG CLASSES 
 .container-right a img{
   border: 4px solid var(--tertiary-color);
   width: 100%;
@@ -164,26 +168,16 @@ footer h2 {
   align-items: center;
   display: flex;
   flex-basis: calc(50% - 1em);
-}
-
-  /* FLEX styles */
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.flex {
-  display: flex;
-}
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+} */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER
 @media screen and (max-width: 980px) {}
 
     /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .container-main {
     flex-direction: column;
   }
-}
+} */
 /* most likely put everything in columns */
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {}

@@ -4,41 +4,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
         <!-- webpage title -->
         <title>Andy Fish - Portfolio</title>
-        <!-- linked style sheet -->
+        <!-- links style sheets -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- personal style sheet -->
         <link rel="stylesheet" href="./assets/style.css">
     </head>
     <body>
+        <main class="container-fluid">
         <!-- navigation -->
-        <header>
-            <h1>
+        <header class="navbar">
+            <h1 class="col-md-6 col-sm-12">
                 <a href="./index.html">Andy Fish</a>
             </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
+            <div class="col-md-6 col-sm-12">
+                <ul class="nav nav-fill justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
                     </li>
-                    <li>
-                        <a href="#projects">Projects</a>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#projects">Projects</a>
                     </li>
-                    <li>
-                        <a href="#contact">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#contact">Contact</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </header>
 <!-- banner  image -->
         <div class="banner-img"></div>
 <!-- make two divs per row.  one with 25% width and the other 75% with margins/padding in between -->
-<section id="about-me" class="container-main">
+    <section id="about-me" class="row">
     <!-- about me -->
-        <div class="container-left">
+        <div class="col-md-3 col-sm-4 col-xs-12">
             <h2>About Me</h2>
         </div>
-        <div class="container-right">
+        <div class="col-md-9 col-sm-8 col-xs-12">
             <!--personal picture link CSS style for size with flex properties?? -->
             <img 
-            class="aboutme-img"
+            class="aboutme-img img-fluid"
             height="75px" 
             width="75px" 
             src="../portfolio-project/images/Shokupan.png"
@@ -58,34 +62,47 @@
         </div>
 </section>
 <!-- projects -->
-<section id="projects" class="container-main">
-        <div class="container-left">
+<section id="projects" class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
             <h2>Projects</h2>
         </div>
-        <div class="container-right">
-            <a href="https://superfishal.github.io/run-buddy/"><img class="imgs" src="./images/runbuddy.png" /></a>
-            <a class="img-small" href="https://superfishal.github.io/horiseon-challenge/"><img src="./images/horiseon.png" /></a>
-            <a class="img-small" href="https://superfishal.github.io/robot-gladiators/"><img src="./images/robots.jpeg" /></a>    
-            <a class="img-small" href="https://www.facebook.com/propersoundpdx"><img src="./images/PS3-12-22.jpeg" /></a>
-            <a class="img-small" href="https://www.facebook.com/superfishaldj/"><img src="./images/superfishal.jpg" /></a>
+        <div class="col-md-9 col-sm-8 col-xs-12">
+        <div class="row">
+            <div class="col-12">
+            <a href="https://superfishal.github.io/run-buddy/"><img class="rounded img-fluid" width="100%" height="auto" src="./images/runbuddy.png" /></a>
+            </div>
+            <div class="col-md-6">
+            <a href="https://superfishal.github.io/horiseon-challenge/"><img class="img-fluid" width="50%" height="auto" src="./images/horiseon.png" /></a>
+            </div>
+            <div class="col-md-6">  
+            <a href="https://superfishal.github.io/robot-gladiators/"><img class="img-fluid" width="50%" height="auto" src="./images/robots.jpeg" /></a>
+            </div>
+            <div class="col-md-6">
+            <a href="https://www.facebook.com/propersoundpdx"><img class="img-fluid" width="50%" height="auto" src="./images/PS3-12-22.jpeg" /></a>
+            </div>
+            <div class="col-md-6">
+            <a href="https://www.facebook.com/superfishaldj/"><img class="img-fluid" width="50%" height="auto" src="./images/superfishal.jpg" /></a>
+            </div>
+        </div>
         </div>
 </section>        
 <!-- contact -->
-<section id="contact" class="container-main">
-    <div class="container-left">
+<section id="contact" class="row">
+    <div class="col-md-3 col-sm-4 col-xs-12">
         <h2>Contact</h2>
     </div>
-    <div class="container-right">
+    <div class="col-md-9 col-sm-8 col-xs-12">
+        <div class="col-12">
         <a href="https://www.linkedin.com/in/andrew-fish-9ab26363/">Linked In</a>
         <a href="https://github.com/superfishal">Github</a>
         <a href="mailto:aofish815@gmail.com">Email</a>
         <a href="tel:+5037801548">Phone</a>
     </div>
 </section> 
-<footer>
+    <footer>
     <h2>❤️️ A Fish</h2>
 <!-- move contact info to footer eventually -->
 <!-- social media handles? -->
-        </footer>
+    </footer>
     </body>
-
+</main>
