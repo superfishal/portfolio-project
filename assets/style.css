@@ -13,7 +13,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 60px;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
 }
@@ -33,4 +33,40 @@ ul {
   display: flex;
   gap: 20px;
   list-style: none;
+}
+
+header {
+  height: 250px;
+  background-image: url("../images/banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#aboutme-img {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+}
+
+#about-me {
+  display: flex;
+}
+
+#about-me h2 {
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 25%;
+  border-right: 3px solid var(--tertiary-color);
+  margin-right: 60px;
+}
+
+#aboutme-body {
+  display: flex;
+}
+
+.aboutme-text {
+  font-size: 1.55vw;
 }
