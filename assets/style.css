@@ -43,30 +43,37 @@ header {
   background-attachment: fixed;
 }
 
+.main-section {
+  display: flex;
+  margin: 25px 30px;
+  justify-content: center;
+}
+
+.main-section h2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  border-right: 4px solid var(--tertiary-color);
+  margin-right: 25px;
+  padding-right: 20px;
+}
+
 #aboutme-img {
   border-radius: 50%;
   width: 20%;
   height: auto;
-}
-
-#about-me {
-  display: flex;
-}
-
-#about-me h2 {
-  padding-right: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 25%;
-  border-right: 3px solid var(--tertiary-color);
-  margin-right: 60px;
+  max-height: 200px;
+  margin: 20px;
 }
 
 #aboutme-body {
   display: flex;
 }
 
-.aboutme-text {
-  font-size: 1.55vw;
+#aboutme-text {
+  font-size: 1.55em;
+}
+
+#projects-body {
+  display: inline-flex;
 }
