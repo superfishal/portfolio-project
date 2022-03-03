@@ -10,6 +10,8 @@
   --secondary-color: rgb(215, 207, 120);
   --tertiary-color: rgb(30, 2, 38);
 }
+
+/* nav and banner img */
 nav {
   display: flex;
   justify-content: space-between;
@@ -43,16 +45,21 @@ header {
   background-attachment: fixed;
 }
 
+/* end header/banner section */
+section {
+  padding: 40px;
+}
+
 .main-section {
   display: flex;
   margin: 25px 30px;
-  justify-content: center;
 }
 
 .main-section h2 {
   display: flex;
   justify-content: flex-end;
-  width: 25%;
+  width: 13%;
+  height: auto;
   border-right: 4px solid var(--tertiary-color);
   margin-right: 25px;
   padding-right: 20px;
@@ -60,7 +67,7 @@ header {
 
 #aboutme-img {
   border-radius: 50%;
-  width: 20%;
+  width: auto;
   height: auto;
   max-height: 200px;
   margin: 20px;
@@ -68,6 +75,9 @@ header {
 
 #aboutme-body {
   display: flex;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
 }
 
 #aboutme-text {
@@ -75,5 +85,56 @@ header {
 }
 
 #projects-body {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
 }
+
+.flex-row {
+  display: flex;
+}
+.project-img {
+  display: block;
+  border: 5px solid var(--secondary-color);
+  width: 100%;
+  height: auto;
+}
+#contact-body {
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  justify-content: space-around;
+}
+/* hover styles for later */
+/* .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--primary-color);
+}
+
+.project-img:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: var(--tertiary-color);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
